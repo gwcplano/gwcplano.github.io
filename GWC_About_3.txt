@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+.flex-container {
+    display: -webkit-flex;
+    display: flex;  
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    text-align: center;
+}
+
+.flex-container > * {
+    padding: 15px;
+    -webkit-flex: 1 100%;
+    flex: 1 100%;
+}
+
+.article {
+    text-align: left;
+}
+
+header {background: Salmon;color:black;}
+footer {background: Salmon;color:black;}
+.nav {background:SkyBlue;}
+
+.nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+.nav ul a {
+    text-decoration: none;
+}
+
+@media all and (min-width: 768px) {
+    .nav {text-align:left;-webkit-flex: 1 auto;flex:1 auto;-webkit-order:1;order:1;}
+    .article {-webkit-flex:5 0px;flex:5 0px;-webkit-order:2;order:2;}
+    footer {-webkit-order:3;order:3;}
+}
+</style>
+</head>
+<body>
+
+<div class="flex-container">
+<header>
+  <h1>GWC Plano</h1>
+</header>
+
+<nav class="nav">
+<ul>
+  <li><a href="#">Home</a></li>
+  <li><a href="#">About Us</a></li>
+  <li><a href="#">Contact Us</a></li>
+</ul>
+</nav>
+
+<article class="article">
+  <h1>About Us</h1>
+  <p>Hello Future Digital Diva,</p>
+  <p>Girls Who Code is a national, non-profit organization that has one mission: “To close the gender gap in technology”.</p>
+ <p>The North Texas Chapter for Girls Who Code, situated in Plano and founded by Bhagyshri Chander, mentors girls from grades 6 – 12 on various coding concepts and application of these computing skills through the completion of weekly programming tasks (per the national GWC syllabus). We also incorporate field trips to tech companies such as AT&T and other activities in order to expose our students to possible career options and outside events.</p>
+ <p><strong>We hope you will consider joining the other 40,000 girls nationwide at being a powerful girl who codes!</strong></p>
+ <p>~ The Plano GWC Team</p>
+</article>
+
+<footer>Copyright &copy; GWCPlano.com</footer>
+</div>
+
+</body>
+</html>
